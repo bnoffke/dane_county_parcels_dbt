@@ -1,0 +1,11 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "DuckDB",
+            "database": "/home/bnoffke/data/munincipal_data.db",
+            "name": "datata"
+        }
+    ]
+}

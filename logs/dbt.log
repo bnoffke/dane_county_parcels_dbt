@@ -1,0 +1,108 @@
+[0m14:18:04.981573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ba5546fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ba3a81540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ba3a814e0>]}
+
+
+============================== 14:18:04.984348 | 21b54cc9-fbce-4a6d-a5a2-1e4fea5317be ==============================
+[0m14:18:04.984348 [info ] [MainThread]: Running with dbt=1.8.6
+[0m14:18:04.984648 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/bnoffke/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init dane_county_parcels', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:18:04.988137 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/bnoffke/.dbt')}
+[0m14:18:04.988374 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m14:18:04.990596 [debug] [MainThread]: Starter project path: /home/bnoffke/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m14:18:04.995763 [info ] [MainThread]: 
+Your new dbt project "dane_county_parcels" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:18:04.996028 [info ] [MainThread]: Setting up your profile.
+[0m14:18:11.883566 [info ] [MainThread]: Profile dane_county_parcels written to /home/bnoffke/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m14:18:11.884499 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 6.9272804, "process_user_time": 0.569558, "process_kernel_time": 0.049777, "process_mem_max_rss": "119432", "process_in_blocks": "56864", "process_out_blocks": "80"}
+[0m14:18:11.884886 [debug] [MainThread]: Command `dbt init` succeeded at 14:18:11.884808 after 6.93 seconds
+[0m14:18:11.885162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ba5546fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ba3a818d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ba3a83040>]}
+[0m14:18:11.885459 [debug] [MainThread]: Flushing usage events
+[0m13:13:46.721797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f57d5eb3100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f57d4401960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f57d44018d0>]}
+
+
+============================== 13:13:46.724967 | 603ca162-c1da-4649-ac57-f714a4db84b5 ==============================
+[0m13:13:46.724967 [info ] [MainThread]: Running with dbt=1.8.6
+[0m13:13:46.725260 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/bnoffke/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt build -s parcel_clean_work', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:13:46.725520 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/bnoffke/dane_count_parcels_dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:13:46.726137 [debug] [MainThread]: Resource report: {"command_name": "build", "command_wall_clock_time": 0.029596161, "process_user_time": 0.573158, "process_kernel_time": 0.07936, "process_mem_max_rss": "89744", "process_in_blocks": "39728", "process_out_blocks": "24", "command_success": false}
+[0m13:13:46.726454 [debug] [MainThread]: Command `dbt build` failed at 13:13:46.726388 after 0.03 seconds
+[0m13:13:46.726644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f57d5eb3100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f57d4401900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f57d44019c0>]}
+[0m13:13:46.726846 [debug] [MainThread]: Flushing usage events
+[0m13:15:06.604952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64a13b7160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f649f8f5a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f649f8f59c0>]}
+
+
+============================== 13:15:06.606432 | 3c2fe850-682d-4b12-b01a-383afdd4db32 ==============================
+[0m13:15:06.606432 [info ] [MainThread]: Running with dbt=1.8.6
+[0m13:15:06.606767 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/bnoffke/.dbt', 'log_path': '/home/bnoffke/dane_count_parcels_dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt build -s parcel_clean_work', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:15:06.702332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3c2fe850-682d-4b12-b01a-383afdd4db32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f649c673640>]}
+[0m13:15:06.728150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3c2fe850-682d-4b12-b01a-383afdd4db32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64a008b8b0>]}
+[0m13:15:06.731189 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m13:15:06.735530 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m13:15:06.762687 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:15:06.763011 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:15:06.763255 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.dane_county_parcels.cleaned
+- models.dane_county_parcels.reporting
+- models.dane_county_parcels.staging
+- models.dane_county_parcels.example
+[0m13:15:06.765824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3c2fe850-682d-4b12-b01a-383afdd4db32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6494524d00>]}
+[0m13:15:06.800923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3c2fe850-682d-4b12-b01a-383afdd4db32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6494534b50>]}
+[0m13:15:06.801270 [info ] [MainThread]: Found 410 macros
+[0m13:15:06.801608 [warn ] [MainThread]: The selection criterion 'parcel_clean_work' does not match any enabled nodes
+[0m13:15:06.801872 [warn ] [MainThread]: The selection criterion 'parcel_clean_work' does not match any enabled nodes
+[0m13:15:06.802094 [warn ] [MainThread]: The selection criterion 'parcel_clean_work' does not match any enabled nodes
+[0m13:15:06.802711 [info ] [MainThread]: 
+[0m13:15:06.802927 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:15:06.803890 [debug] [MainThread]: Command end result
+[0m13:15:06.817011 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 0.23659746, "process_user_time": 0.694274, "process_kernel_time": 0.099182, "process_mem_max_rss": "129356", "process_in_blocks": "2112", "process_out_blocks": "1592"}
+[0m13:15:06.817527 [debug] [MainThread]: Command `dbt build` succeeded at 13:15:06.817338 after 0.24 seconds
+[0m13:15:06.817771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64a13b7160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64a052f430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f649c673640>]}
+[0m13:15:06.817991 [debug] [MainThread]: Flushing usage events
+[0m13:18:09.784608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf37a27100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf3612b7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf3612b820>]}
+
+
+============================== 13:18:09.786613 | 8c684ace-e91a-4971-9898-167726fc2911 ==============================
+[0m13:18:09.786613 [info ] [MainThread]: Running with dbt=1.8.6
+[0m13:18:09.786925 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/bnoffke/dane_count_parcels_dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/home/bnoffke/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt build -s parcel_clean_work', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:18:09.937718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c684ace-e91a-4971-9898-167726fc2911', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf35fea530>]}
+[0m13:18:09.963564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c684ace-e91a-4971-9898-167726fc2911', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf366afbb0>]}
+[0m13:18:09.966164 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m13:18:09.971498 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m13:18:10.000239 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:18:10.000506 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:18:10.000789 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.staging
+- models.example
+- models.reporting
+- models.cleaned
+[0m13:18:10.003488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c684ace-e91a-4971-9898-167726fc2911', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf2acccca0>]}
+[0m13:18:10.046019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c684ace-e91a-4971-9898-167726fc2911', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf2acdd2d0>]}
+[0m13:18:10.046379 [info ] [MainThread]: Found 410 macros
+[0m13:18:10.046713 [warn ] [MainThread]: The selection criterion 'parcel_clean_work' does not match any enabled nodes
+[0m13:18:10.046962 [warn ] [MainThread]: The selection criterion 'parcel_clean_work' does not match any enabled nodes
+[0m13:18:10.047247 [warn ] [MainThread]: The selection criterion 'parcel_clean_work' does not match any enabled nodes
+[0m13:18:10.047860 [info ] [MainThread]: 
+[0m13:18:10.048083 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:18:10.049017 [debug] [MainThread]: Command end result
+[0m13:18:10.062552 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 0.3024275, "process_user_time": 0.815146, "process_kernel_time": 0.064636, "process_mem_max_rss": "129088", "process_in_blocks": "44864", "process_out_blocks": "1592"}
+[0m13:18:10.062964 [debug] [MainThread]: Command `dbt build` succeeded at 13:18:10.062901 after 0.30 seconds
+[0m13:18:10.063309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf37a27100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf35fe94e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf366afbb0>]}
+[0m13:18:10.063586 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,44 @@
+models:
+  - name: parcel_clean_work
+    columns:
+      - name: PARCELNO
+        description: The parcel number to identify the parcel.
+        data_type: varchar
+        quote: true
+      - name: assessment_year
+        description: The year for the parcel assessment.
+        data_type: integer
+      - name: improvement_value
+        description: The value of the improvements on the parcel.
+        data_type: double
+      - name: land_value
+        description: The value of the land in the parcel.
+        data_type: double
+      - name: assessed_acres
+        description: The number of acres of land within the parcel.
+        data_type: double
+      - name: street_number
+        description: The street number portion of the address.
+        data_type: varchar
+      - name: street_direction
+        description: The direction of the street address.
+        data_type: varchar
+      - name: street_name
+        description: The name of the street for the property address.
+        data_type: varchar
+      - name: street_type
+        description: The type of street for the property address.
+        data_type: varchar
+      - name: unit_number
+        description: The unit number of the property address.
+        data_type: varchar
+      - name: city
+        description: The city of the property.
+        data_type: varchar
+      - name: zip_code
+        description: The ZIP code of the property.
+        data_type: varchar
+    description: This coalesces various attributes for parcels across different
+      formats over the years. It also cleans up some addresses, fixing
+      inconsistent casing, and fills in assessment acres for previous years
+      where the value is zero.
