@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw  # your source schema name
+    description: "Source schema for raw data."
+    tables:
+      - name: parcels_raw  # your table name
+        description: "Raw data for parcels."
+        columns:
+          - name: PARCELNO
+            description: "Unique parcel number identifier."
+          - name: ATTRIBUTES
+            description: "Attributes associated with the parcel. Stored in JSON format."
+          - name: year_number
+            description: "Assessment year of the parcel."
+          - name: load_dttm
+            description: "Timestamp when the record was loaded."
+

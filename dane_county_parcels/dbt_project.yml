@@ -1,0 +1,36 @@
+name: 'dane_county_parcels'
+version: '1.0.0'
+
+profile: 'dane_county_parcels'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dane_county_parcels:
+    # Staging area for initial transformations and cleaning steps
+    staging:
+      +materialized: view
+      +schema: staging
+
+    # Organized data layer
+    cleaned:
+      +materialized: table
+      +schema: cleaned
+
+    # Purpose-driven datasets for reports and applications
+    reporting:
+      +materialized: table
+      +schema: datamart
+
+    # You can keep the example config if needed, or remove it
+    example:
+      +materialized: view
